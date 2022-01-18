@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 align="center" style="color: green;">Đăng kí du lịch</h2>
+    <form id="MyForm" action="" method="post">
+        <table style="background-color: rgb(100, 197, 100); color: green;" border="1">
+            <tr>
+                <td>
+                    <label for="Name">Họ và tên</label>
+                </td>
+                <td>
+                    <input id="Name" type="text">
+                </td>
+            
+            </tr>
+            <tr>
+                <td>
+                    <label for="Adress">Địa chỉ</label>
+                </td>
+                <td>
+                    <input id="Adress" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Phone_number">Phone number</label>
+                </td>
+                <td>
+                    <input id="Phone_number" type="number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Vietnamese">Khách hàng Việt Nam</label>
+                </td>
+                <td>
+                    <input id="Vietnamese" type="checkbox">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tour">Chọn tour</label>
+                </td>
+                <td>
+                    <select name="tour" id="tour">
+                        <optgroup label="Miền Bắc">
+                            <option value="Nha_Trang-Đà_Lạt">Nha Trang - Đà Lạt</option>
+                            <option value="Buôn_Mê_Thuộc-Gia_Lai-Kon_Tum">Buôn Mê Thuộc - Gia Lai - Kontum</option>
+                        </optgroup>
+                        <optgroup label="Miền Trung">
+                            <option value="Huế-Đà_Nẵng">Huế - Đà Nẵng</option>
+                        </optgroup>
+                        <optgroup label="Miền Nam">
+                            <option value="TPHCM">TP.HCM</option>
+                            <option value="Cà_May">Cà Mau</option>
+                        </optgroup>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Vehicle">Phương tiện</label>
+                </td>
+                <td>
+                    <input id="Vehicle" type="radio" name="Phương tiện" value="Máy_bay" checked>Máy bay
+                    <input id="Vehicle" type="radio" name="Phương tiện" value="Ô_tô" checked>Ô tô
+                </td>
+            </tr>
+            <tr >
+                <td colspan="2" align="center">
+                <fieldset style="width: 350px; height: 55px;" >
+                        <legend >Chọn người tham gia</legend>
+                        <label for="Adult">Người lớn</label>
+                        <input id="Adult" name="Adult" type="number" style="width: 35px;">
+                        <label for="Children">Trẻ em</label>  
+                        <input id="Children" name="Children" type="number" style="width: 35px;">
+                </fieldset>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Note">Ghi chú thêm</label>
+                </td>
+                <td>
+                    <textarea name="Note" id="Note" style="width:300px"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Đăng ký" onclick="regist()">
+                </td>
+                <td></td>
+            </tr>
+            <!-- e chưa làm đc phần này :( -->
+            <!-- <tr>
+                <td colspan="2" align="center"> 
+                    <div style="color:red" id="msg">
+                    </div>
+              </td> 
+            </tr> -->
+        </table>
+
+    </form>
+    <!-- <script>
+        regist(); {
+            const noti = document.getElementById("msg")
+            const p = document.createElement("p")
+            p.textContent += "Bạn đã đăng ký thành công"
+            noti.appendChild(p)
+        }
+    </script> -->
+</body>
+</html>
