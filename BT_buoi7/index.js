@@ -6,7 +6,7 @@ function checkPrime(n) {
         return false;
     }
     for (let index = 2; index < n; index++) {
-        if(n % i == 0){
+        if(n % index == 0){
             return false;
         }
         
@@ -26,7 +26,7 @@ console.log('bài 1');
 
 function print1ToN(n) {
     for (let index = 0; index < n; index++) {
-        console.log(i);
+        console.log(index);
     }
 }
 
@@ -34,7 +34,7 @@ console.log('bài 2')
 
 function printOdd(n) {
     for (let index = 0; index < n; index++) {
-        if(i % 2 == 1){
+        if(index % 2 == 1){
             console.log(i);
         }
     }
@@ -44,7 +44,7 @@ console.log('Bài 3')
 
 function printEven(n) {
     for (let index = 0; index < n; index++) {
-        if(i % 2 == 0){
+        if(index % 2 == 0){
             console.log(i);
         }
     }
@@ -54,8 +54,8 @@ console.log('Bài 4')
 
 function printPrime(n) {
     for (let index = 0; index < n; index++) {
-        if(checkPrime(i)){
-            console.log(i);
+        if(checkPrime(index)){
+            console.log(index);
         }
     }
 }
@@ -65,7 +65,7 @@ console.log('Bài 5')
 function getSum(n) {
     let sum = 0;
     for (let index = 0; index < n; index++) {
-        sum += i;
+        sum += index;
     }
     return sum;
 }

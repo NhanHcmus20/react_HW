@@ -39,4 +39,34 @@ function normalizeName(name) {
     }
     return name;
 }
-console.log(normalizeName(str1))
+
+let newArray = ["hong", "tung", "xoan", "truong"];
+
+newArray.splice(0, 0, 1, 2);
+
+newArray.splice(3, 2, 3, 4);
+
+newArray.splice(newArray.length, 0, 5);
+
+
+// console.log(newArray);
+
+let a = [1,2,3,4,5,6,7,8,9,9,9,8,7,6,5,4,3,2,1];
+
+function countMax(a) {
+    let count = [0,0,0,0,0,0,0,0,0,0]
+    for (let index = 0; index < a.length; index++) {
+        count[a[index]]++;
+    }
+    let max = count[0];
+    let res = 0;
+    for (let index = 1; index < count.length; index++) {
+        if(count[index] > max) {
+            max = count[index];
+            res = index;
+        }
+    }
+    return res;
+}
+
+console.log(countMax(a));

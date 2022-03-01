@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.head{
+    position:relative;
+    background-image: url('https://wallpaperaccess.com/full/52448.jpg');
+    background-size: cover;
+    min-height: 800%;
+    padding-bottom:100px;
+    overflow: hidden;
+}
+
+.head :after{
+    content:'';
+    position:absolute;
+    bottom:0; 
+    left:0;
+    border-left:50vw solid #fff;
+    border-right:50vw solid #fff;
+    border-top:100px solid transparent;;
+}
+
+.nav_logo{
+    display: flex;
+    justify-content: center;
+}
+
+#logo{
+    position: relative;
+    top: 25%;
+    
+    max-width: 200px;
+    
+    clip-path: circle(150px at center);
+}
+
+.head p{
+    color: azure;
+}
+
+.content_1{
+    float:inline-start;
+}
+
