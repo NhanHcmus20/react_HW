@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: linear-gradient(to right, #4daf54, #3d8880);
+}
+
+.card{
+    margin: 120px auto;
+    background: #272d42;
+    color: white;
+    width: 320px;
+    height: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card_heart, .card_cart{
+    font-size: 25px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+.card_cart{
+    left: unset;
+    right: 20px;
+}
+
+.card_img{
+    width: 90%;
+}
+
+.card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
