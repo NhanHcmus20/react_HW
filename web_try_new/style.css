@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@100&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +8,8 @@
 
 body{
     height: 100vh;
-    background-color: linear-gradient(to right, #4daf54, #3d8880);
+    background-image: linear-gradient(to right, #4daf54, #3d8880);
+    font-family: "Poppins";
 }
 
 .card{
